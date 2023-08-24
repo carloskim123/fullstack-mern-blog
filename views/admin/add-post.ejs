@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="/css/editor.css" />
+<a href="/dashboard">&larr; Back</a>
+
+<div class="admin-title">
+  <h2>Add new Post</h2>
+</div>
+
+<form action="/add-post" method="post" enctype="multipart/form-data">
+  <label for="title"><b>Title</b></label>
+  <input type="text" placeholder="Post title" id="title" name="title" />
+  <label for="body"><b>Content</b></label>
+  <textarea
+    id="body"
+    name="body"
+    cols="50"
+    rows="30"
+    placeholder="Start writing..."
+  ></textarea>
+  <input type="submit" value="Add" class="btn" />
+</form>
