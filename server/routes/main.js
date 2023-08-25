@@ -57,9 +57,13 @@ router.get("/post/:id", async (req, res) => {
     const locals = {
       title: data.title,
       description: "Simple Blog with Nodejs, Express and Mongodb",
+
     };
 
-    res.render("post", { data, locals });
+    res.render("post", {
+      data, locals,
+
+    });
   } catch (error) {
     console.log(error);
   }
@@ -85,7 +89,9 @@ router.post("/search", async (req, res) => {
     });
 
     // res.send(searchTerm);
-    res.render("search", { data, locals });
+    res.render("search", {
+      data, locals,
+    });
   } catch (error) {
     console.log(error);
   }

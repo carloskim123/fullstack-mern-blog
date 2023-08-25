@@ -16,7 +16,8 @@ const jwtSecret = process.env.JWT_SECRET;
 const authMiddleware = (req, res, next) => {
   const token = req.cookies.token;
   if (!token) {
-    return res.status(401).json({ message: "Unauthorized" });
+    // return
+    res.redirect("/admin");
   }
   try {
     const decoded = jwt.verify(token, jwtSecret);
@@ -87,6 +88,7 @@ router.post("/register", async (req, res) => {
       }
       res.status(500).json({ message: "Internal server error." });
     }
+
   } catch (error) {
     console.log(error);
   }
@@ -201,5 +203,16 @@ router.delete("/delete-post/:id", authMiddleware, async (req, res) => {
   }
 });
 
+/*
+ * Get
+ * Admin - Admin Logout
+ */
+
+router.get("/logout", async (req, res) => {
+  res.clearCookie("token");
+  // res.json({ message: "You have been logged out" });
+  console.log("You have been logged out");
+  res.redirect("/");
+});
 
 module.exports = router;
