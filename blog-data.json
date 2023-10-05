@@ -1,0 +1,42 @@
+{
+        {
+            "title": "Introduction to React.js",
+            "body": "Discover the fundamentals of building web applications with React.js",
+            "createdAt": {
+                "$date": "2023-08-25T09:30:15.124Z"
+            },
+            "updatedAt": {
+                "$date": "2023-08-25T09:30:15.124Z"
+            }
+        },
+        {
+            "title": "Python Web Development",
+            "body": "Explore web development using Python with frameworks like Django and Flask",
+            "createdAt": {
+                "$date": "2023-08-26T14:45:30.521Z"
+            },
+            "updatedAt": {
+                "$date": "2023-08-26T14:45:30.521Z"
+            }
+        },
+        {
+            "title": "JavaScript Fundamentals",
+            "body": "Learn the basics of JavaScript programming language",
+            "createdAt": {
+                "$date": "2023-08-27T18:12:10.893Z"
+            },
+            "updatedAt": {
+                "$date": "2023-08-27T18:12:10.893Z"
+            }
+        },
+        {
+            "title": "Getting Started with MongoDB",
+            "body": "Begin your journey with MongoDB, a NoSQL database",
+            "createdAt": {
+                "$date": "2023-08-28T10:05:55.621Z"
+            },
+            "updatedAt": {
+                "$date": "2023-08-28T10:05:55.621Z"
+            }
+        }
+}

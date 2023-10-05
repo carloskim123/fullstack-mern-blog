@@ -5,8 +5,12 @@
   
   /* Set the width of the login form */
   .parent-home {
-    width: 300px;
+    width: 500px;
     margin: 0 auto;
+    display: flex;
+    gap:4rem;
+    justify-content: center;
+    align-items:center;
   }
   
   /* Set the headings and labels */
